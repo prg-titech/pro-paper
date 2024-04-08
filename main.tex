@@ -30,31 +30,34 @@
 
 \begin{document}
 
-\title{How to Prepare Your Papers for the JIP\\
-(ipsj.cls version 2.01)}
+\title{Compilation for Version Polymorphic\\Object-Oriented Programming Language}
 
-\affiliate{IPSJ}{Information Processing Society of Japan, 
-Chiyoda, Tokyo 101--0062, Japan}
-\affiliate{JU}{Johoshori University, Chiyoda, Tokyo 101--0062, Japan}
-\paffiliate{PJU}{Johoshori University}
+\affiliate{TIT}{Tokyo Institute of Technology, 
+Meguro, Tokyo 152--8550, Japan}
 
-\author{Taro Joho}{IPSJ,PJU}[joho.taro@ipsj.or.jp]
-\author{Hanako Shori}{JU}[shori.hanako@johosyori-u.ac.jp]
-\author{Jiro Gakkai}{IPSJ}
+\author{Luthfan Anshar Lubis}{TIT}[luthfanlubis@prg.is.titech.ac.jp]
+\author{Yudai Tanabe}{TIT}
+\author{Masuhara Hidehiko}{TIT}
 
 
 \begin{abstract}
-This document is a guide for preparing drafts to be submitted to the
-Journal of Information Processing (JIP) and for the final camera-ready
-manuscripts of papers to appear in the JIP that use \LaTeX and special
-style files.  Since this document itself is produced with these style
-files, it will help you to refer to its source file, which is
-distributed with these style files.
+Programming with versions (PWV) introduced versions into the language semantics 
+allowing version-safe multi-version programming. BatakJava, an object-oriented 
+implementation of this concept, takes a nonrestrictive approach to PWV that allows 
+different versions of a class to interact together. To ensure version safety, 
+BatakJava requires every type in a program to be fixed to a particular version after 
+compilation. However, the nature of multi-version programming inevitably would 
+require some types in a definition to be used with different combination of versions. 
+To solve this problem, we propose the use of parameterized versions to allow version 
+polymorphic definitions. This paper presents the design for a version polymorphic 
+extension of BatakJava, 
+an implementation that modifies BatakJava's type analysis and code generation, 
+and a case study to demonstrate the better flexibility of programming with version 
+polymorphism.
 \end{abstract}
 
 \begin{keyword}
-Journal of Information Processing, \LaTeX, style files, ``Dos and
- Don'ts'' list
+object-orientation, versioning, software evolution
 \end{keyword}
 
 \maketitle
