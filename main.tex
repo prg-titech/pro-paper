@@ -30,7 +30,7 @@
 
 \begin{document}
 
-\title{Compilation for Version Polymorphic\\Object-Oriented Programming Language}
+\title{Compilation for a Version Polymorphic\\Object-Oriented Programming Language}
 
 \affiliate{TIT}{Tokyo Institute of Technology, 
 Meguro, Tokyo 152--8550, Japan}
@@ -41,19 +41,37 @@ Meguro, Tokyo 152--8550, Japan}
 
 
 \begin{abstract}
-Programming with versions (PWV) introduced versions into the language semantics 
-allowing version-safe multi-version programming. BatakJava, an object-oriented 
-implementation of this concept, takes a nonrestrictive approach to PWV that allows 
-different versions of a class to interact together. To ensure version safety, 
-BatakJava requires every type in a program to be fixed to a particular version after 
-compilation. However, the nature of multi-version programming inevitably would 
-require some types in a definition to be used with different combination of versions. 
-To solve this problem, we propose the use of parameterized versions to allow version 
-polymorphic definitions. This paper presents the design for a version polymorphic 
-extension of BatakJava, 
-an implementation that modifies BatakJava's type analysis and code generation, 
-and a case study to demonstrate the better flexibility of programming with version 
-polymorphism.
+% Programming with versions (PWV) introduced the notion of versions into the language semantics 
+% and allowed version-safe multi-version programming. BatakJava, an object-oriented 
+% implementation of this concept, takes a non-restrictive approach to PWV that allows 
+% different versions of a class to interact together. To ensure version safety, 
+% BatakJava requires every type in a program to be fixed to a particular version after 
+% compilation. However, the nature of multi-version programming inevitably 
+% require some types in a definition to be used with different combination of versions. 
+% To solve this problem, we propose the use of parameterized versions to allow version 
+% polymorphic definitions. This paper presents the design for a version polymorphic 
+% extension of BatakJava, 
+% an implementation that modifies BatakJava's type analysis and code generation, 
+% and a case study to demonstrate the better flexibility of programming with version 
+% polymorphism.
+
+Programming with versions (PWV) introduces the notions of versions into the 
+language semantics and allows for version-safe multi-version programming. 
+BatakJava is an object-oriented implementation of PWV that adds versions 
+as an attribute of a class, where different versions of a class can coexist and 
+interact with each other in the same program. 
+To ensure version safety, BatakJava uses a constraint-based type system during 
+compilation that 
+solves for a fixed version assignment for every type instance in the program.
+However, this compilation scheme significantly reduces the flexibility of 
+multi-version programming that may require type instances to be used with 
+different version assignments.
+To solve this problem, we propose the use of parameterized versions to allow 
+version polymorphic definitions. 
+This paper presents the design for a version polymorphic extension of BatakJava, 
+its implementation that modifies the original type analysis and code generation, 
+and a case study to demostrate the improved flexibility of multi-version 
+programming with version polymorphism.
 \end{abstract}
 
 \begin{keyword}
