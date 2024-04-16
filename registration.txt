@@ -1,0 +1,90 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% プログラミング研究会・発表申込みフォーム %%%%%%%%
+%%%%%%%%                                          %%%%%%%%
+%%%%%%%% 以下の記入例を削除して記入してください   %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% TeXで処理しますので，TeXに準じた記法でご記入ください．
+
+%%% 氏名・所属（和文および英文，発表者に○印をつけて下さい）
+\author{Luthfan Anshar Lubis}{TIT}[luthfanlubis@prg.is.titech.ac.jp]
+\author{Yudai Tanabe}{TIT}
+\author{Masuhara Hidehiko}{TIT}{masuhara@acm.org}
+% 注:   和文，欧文の氏名の後に所属ラベルをつけて，以下で定義してください．
+%       氏と名の間はスペースを一つ空けてください．
+%       所属が複数の場合はラベルをカンマで区切り，並べてください．
+%       全角スペースは用いないでください．
+% 所属ラベルの定義 (和文と英文は「\\ 」で区切ってください)
+% 英語表記には，記入例に倣い，所属に続けて住所（市町村名または東京都特別区名，
+% 都道府県名，郵便番号の3点）もご記入ください．
+\affiliate{TIT}{Tokyo Institute of Technology, 
+Meguro, Tokyo 152--8550, Japan}
+%%% 代表者連絡先（氏名，郵便物が受け取れる住所，電話番号，電子メールアドレス）
+\contact{
+Luthfan Anshar Lubis
+〒145-0071 東京都大田区田園調布1-3-3 ARDEN田園調布102
+Tel: (080)4341-0804
+E-mail: luthfanlubis@prg.is.titech.ac.jp
+E-mail: luthfanlubis@prg.is.titech.ac.jp, luthfanlubis@gmail.com
+}
+
+%%% タイトル（和文論文の場合は和文と英文の両方）
+% 和文タイトル
+\title{新しいプログラミング言語の設計と実装}
+
+% 英文タイトル
+\etitleCompilation for a Version Polymorphic Object-Oriented Programming Language}
+
+
+%%% 発表概要（和文600字程度，英文200ワード程度．和文論文の場合は和文と
+%%%          英文の両方を，英文論文の場合は英文のみを書いてください）
+
+% 和文発表概要 (600字程度)
+\begin{abstract}
+和文概要を600字程度ここに書きます．
+この発表申し込みフォームでは，発表概要ですので「本論文」とはせず，
+「本発表」などとしてください．
+逆に，実際の論文の概要では「本論文」などとするのが望ましいです．
+\end{abstract}
+% 英文発表概要 (200ワード程度)
+\begin{eabstract}
+Programming with versions (PWV) introduces the notions of versions into the 
+language semantics and allows for version-safe multi-version programming. 
+BatakJava is an object-oriented implementation of PWV that adds versions 
+as an attribute of a class, where different versions of a class can coexist and 
+interact with each other in the same program. 
+To ensure version safety, BatakJava uses a constraint-based type system during 
+compilation that 
+solves for a fixed version assignment for every type instance in the program.
+However, this compilation scheme significantly reduces the flexibility of 
+multi-version programming that may require type instances to be used with 
+different version assignments.
+To solve this problem, we propose the use of parameterized versions to allow 
+version polymorphic definitions. 
+This paper presents the design for a version polymorphic extension of BatakJava, 
+its implementation that modifies the original type analysis and code generation, 
+and a case study to demostrate the improved flexibility of multi-version 
+programming with version polymorphism.
+\end{eabstract}
+
+%%% 論文誌投稿の希望の有無（どちらか残してください）
+% 希望する
+
+%%% オリジナル論文とサーベイ論文の種別指定（どちらか残してください）
+%%% （論文誌投稿を希望しない場合は変更せずそのまま残してください）
+% オリジナル論文
+
+%%% 「短い発表」の希望（どちらか残してください）
+%%% （論文誌投稿を希望する場合は変更せずそのまま残してください）
+% 希望する／希望しない
+
+%%% 発表者の本年度冒頭（4月1日）時点での年齢（どちらか残してください）
+%%% （発表者が29歳以下であると申告された場合には，発表者をCS領域奨励賞の
+%%% 　選考対象とします．本申告は任意ですので，申告したくない場合には変更
+%%% 　せずそのまま残してください．）
+% 29歳以下
+
+%%% その他連絡事項 （任意）
+
+%%%%%% ここまでプログラミング研究会・発表申し込みフォーム %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
