@@ -1,0 +1,17 @@
+\section{Introduction}
+
+... similar opening as the other PWV papers before talking about PWV
+
+\emph{Programming with versions} is a paradigm that introduces versions as part of the language semantics, managing them as a type's resources through a coeffectful type system~\cite{tanabe2021functional}. It was demonstrated in $\lambda$VL through versioned values that enables multi-version programming and allows for static dependency analysis by analyzing version resources in type aiming at increasing programming's flexibility and encouraging gradual dependency migration.
+
+BatakJava~\cite{?}, an extension of Java, builds on the idea of $\lambda$VL and explores programming with versions in an object-oriented setting, treating versions as an element of class. It relaxes $\lambda$VL's limitation by allowing cross-version computations and includes versions in data structures and the module system.
+
+However, BatakJava does not support \emph{version polymorphism}, which means a single definition cannot represent multiple implementations requiring different versions even when they are compatible. This inflexibility contradicts with the nature of multi-version programming that would require definitions to support instantiations by different versions.
+
+We propose to add genericity to versioning in BatakJava through version parameterization, similar to type parameters in Java generics~\cite{}. Parameters would abstract version assignments to specific class instances in the definition.
+
+Our contributions are as follows:
+
+- We propose a version polymorphic extension of BatakJava that allows for version parameterization in class definitions
+- We implement the extension by modifying BatakJava's type analysis and code generation
+- We demonstrate the flexibility of programming with version polymorphism through a case study

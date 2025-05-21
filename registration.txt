@@ -33,7 +33,7 @@ E-mail: luthfanlubis@prg.is.titech.ac.jp, luthfanlubis@gmail.com
 \title{新しいプログラミング言語の設計と実装}
 
 % 英文タイトル
-\etitleCompilation for a Version Polymorphic Object-Oriented Programming Language}
+\etitle{Compilation for a Version Polymorphic Object-Oriented Programming Language}
 
 
 %%% 発表概要（和文600字程度，英文200ワード程度．和文論文の場合は和文と
